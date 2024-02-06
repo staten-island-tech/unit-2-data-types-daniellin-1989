@@ -10,8 +10,26 @@ elif is_Chan_cheating_on_Maria == "No":
 else:
     print("IT IS A YES OR NO QUESTION!") """
 
-odd_or_even = int (input ("Enter any number to test whether it is odd or even:") )
+#odd or even
+""" odd_or_even = int (input ("Give me a number:") )
 if ((odd_or_even) % 2) == 0: 
-    print ("The number is even")
+    print ("I think the number is even")
 else:
-    print ("The provided number is odd")
+    print ("I hope the number is odd") """
+
+#tip
+
+def bill():
+    global bill
+    print ("What is your bill?")   
+    bill = float(input("> $"))
+    
+def tip():
+    print("How as the service?")
+    service = input(">")
+    if ((service) == "bad"):
+        print("You broke! No tip.")
+    elif((service) == "okay"):
+        print(f"The reccomended tip is {bill*float(0.15)}")
+bill()
+tip()
