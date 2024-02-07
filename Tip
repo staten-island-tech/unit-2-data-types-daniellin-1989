@@ -1,0 +1,20 @@
+#tip
+def bill():
+  global bill
+  print("What is your bill?")
+  bill = float(input("> $"))
+
+
+def tip():
+  print("How as the service?")
+  service = input(">")
+  if ((service) == "bad"):
+    print("You broke! No tip.")
+  elif ((service) == "okay"):
+    print(f"The reccomended tip is {bill*float(0.15)}")
+  elif ((service) == "good"):
+    print(f"The reccomended tip is {bill*float(0.20)}")
+  elif ((service) == "great"):
+    print(f"Thank you. for the amazin tip of {bill*float(0.25)}")
+bill()
+tip()
