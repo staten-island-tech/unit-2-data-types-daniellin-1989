@@ -65,12 +65,6 @@ def greatest_common_factor2():
 greatest_common_factor2()
  """
 
-def Greatest_Common_Factor(m,n):
+def Greatest_Common_Factor():
     if n == 0:
-        return m
-    else:
-        return Greatest_Common_Factor(n, m % n)
-m = int(input("Give me your first number:"))
-n = int(input("Give me your second number:"))
-
-print("The Greast Common Factor is:", Greatest_Common_Factor(m,n))
+        return map
