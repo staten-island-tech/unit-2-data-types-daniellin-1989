@@ -50,21 +50,12 @@ def factor():
 factor() """
 
 #Greatest Common Factor
-""" number1 = int(input("Give me your first number:"))
-def greatest_common_factor1():
-    for i in range (1, number1 + 1):
-        if number1 % i == 0:
-            print (i)
-greatest_common_factor1()
-
-number2 = int(input("Give me your second number:"))
-def greatest_common_factor2():
-    for x in range (1, number1 + 1):
-        if number1 % x == 0:
-            print (x)
-greatest_common_factor2()
- """
-
-def Greatest_Common_Factor():
+def Greatest_Common_Factor(m,n):
     if n == 0:
-        return map
+        return m
+    else:
+        return Greatest_Common_Factor(n, m % n)
+m = int(input("Give me your first number:"))
+n = int(input("Give me your second number:"))
+
+print("The Greast Common Factor is:", Greatest_Common_Factor(m,n))

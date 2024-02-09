@@ -5,3 +5,4 @@ if ((odd_or_even) % 2) == 0:
     print ("I think the number is even")
 else:
     print ("I hope the number is odd")
+    
